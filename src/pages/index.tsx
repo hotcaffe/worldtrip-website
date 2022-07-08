@@ -1,8 +1,10 @@
+import { Flex } from "@chakra-ui/react";
+import Paper from "src/components/Paper";
 
 export default function Home() {
   return (
-    <div>
-      <p>test</p>
-    </div>
+    <Flex>
+      <Paper />
+    </Flex>
   )
 }
