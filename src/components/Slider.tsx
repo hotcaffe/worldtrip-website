@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Image, VStack, Text } from "@chakra-ui/react";
-import { Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -29,11 +29,15 @@ interface SliderProps {
 export default function Slider({ content }: SliderProps) {
   return (
     <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
       navigation={true}
       pagination={{
         clickable: true,
       }}
-      modules={[Navigation, Pagination]}
+      loop={true}
+      autoplay = {{
+        delay: 5000
+      }}
       className="mySwiper"
       style={SwiperStyles}
     >
