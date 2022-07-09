@@ -4,6 +4,7 @@ import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import Slider from "src/components/Slider";
 
 export default function Home() {
   return (
@@ -32,71 +33,31 @@ export default function Home() {
       >
         Vamos nessa? <br /> Então escolha seu continente
       </Text>
-      <Swiper
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        background="/images/europe.jpg"
-        modules={[Navigation]}
-        className="mySwiper"
-        style={{
-          width: "1240px",
-          height: "450px",
-          "--swiper-navigation-color": "#FFBA08", //@ts-ignore
-        }}
-      >
-        <SwiperSlide>
-          <Image
-            src="/images/europe.jpg"
-            height="100%"
-            width="100%"
-            filter="auto"
-            brightness={0.5}
-          />
-          <VStack
-            position="absolute"
-            top={0}
-            w="100%"
-            h="100%"
-            justifyContent="center"
-            spacing={2}
-            color="white"
-          >
-            <Text fontSize="5xl" fontWeight="bold">
-              Europa
-            </Text>
-            <Text fontSize="2xl" fontWeight="bold" color="gray.300">
-              O continente mais antigo.
-            </Text>
-          </VStack>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src="/images/asia.jpg"
-            height="100%"
-            width="100%"
-            filter="auto"
-            brightness={0.5}
-          />
-          <VStack
-            position="absolute"
-            top={0}
-            w="100%"
-            h="100%"
-            justifyContent="center"
-            spacing={2}
-            color="white"
-          >
-            <Text fontSize="5xl" fontWeight="bold">
-              Asia
-            </Text>
-            <Text fontSize="2xl" fontWeight="bold" color="gray.300">
-              Conheça a cultura milenar oriental.
-            </Text>
-          </VStack>
-        </SwiperSlide>
-      </Swiper>
+      <Slider content={[{
+        image: '/images/continents/europe.jpg',
+        title: 'Europa',
+        description: 'O continente mais antigo.'
+      }, {
+        image: '/images/continents/asia.jpg',
+        title: 'Asia',
+        description: 'A cultura milenar oriental.'
+      }, {
+        image: '/images/continents/africa.jpg',
+        title: 'Africa',
+        description: 'A diversidade na natureza.'
+      }, {
+        image: '/images/continents/north-america.jpg',
+        title: 'America do Norte',
+        description: 'O centro do novo mundo.'
+      }, {
+        image: '/images/continents/south-america.jpg',
+        title: 'America do Sul',
+        description: 'A diversidade de povos e culturas.'
+      }, {
+        image: '/images/continents/oceania.jpg',
+        title: 'Oceânia',
+        description: 'O ultimo continente descoberto.'
+      }]}/>
     </Flex>
   );
 }
