@@ -8,13 +8,15 @@ export default function Header(){
 
     return (
         <Flex as="header" justify="center" align="center">
-            {router.asPath == '/continent' && (
-                <Link href="/" passHref>
-                    <ChevronLeftIcon position="absolute" w="32px" h="32px" left="140px" _hover={{
-                        cursor: "pointer"
-                    }}/>
-                </Link>
-            )}
+            <Flex position='absolute' m='auto' w={1440} align='center'>
+                {router.asPath == '/continent' && (
+                    <Link href="/" passHref>
+                        <ChevronLeftIcon w="32px" h="32px" ml="140px" _hover={{
+                            cursor: "pointer"
+                        }}/>
+                    </Link>
+                )}
+            </Flex>
             <Image src='/images/logo.svg' alt="logo" h="45px" w="180px" marginY="27px"/>
         </Flex>
     )

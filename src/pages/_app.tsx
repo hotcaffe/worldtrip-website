@@ -6,7 +6,7 @@ import "swiper/css/bundle";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme} >
       <Head>
         <title>worldtrip</title>
       </Head>
