@@ -3,7 +3,7 @@
     {
       "id": "as",
       "name": "Asia",
-      "description": "O continente asiático é o maior e mais populoso continente do mundo. É banhado por três oceanos: a leste pelo Pacífico, ao norte pelo Glacial Ártico e ao Sul pelo Índico. O continente asiático possui um relevo variado. Curiosamente, possui o ponto mais alto e o ponto mais baixo da Terra, que são, respectivamente, o Monte Everest (8.848m acima do nível do mar) e o Mar Morto (392m abaixo do nível do mar).",
+      "description": "O continente asiático é o maior e mais populoso continente do mundo. É banhado por três oceanos: a leste pelo Pacífico, ao norte pelo Glacial Ártico e ao Sul pelo Índico. O continente asiático possui um relevo variado. Curiosamente, possui o ponto mais alto e o ponto mais baixo da Terra, que são, respectivamente, o Monte Everest e o Mar Morto.",
       "ranking": {
         "countries": "50",
         "languages": "200",
@@ -13,46 +13,55 @@
         {
           "name": "Hong Kong",
           "country": "China (SAR)",
+          "code": "HK",
           "imageURL": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"
         },
         {
           "name": "Bangkok",
           "country": "Tailândia",
+          "code": "TH",
           "imageURL": "https://images.unsplash.com/photo-1601224335112-b74158e231ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
         },
         {
           "name": "Macau",
           "country": "China (SAR)",
+          "code": "MO",
           "imageURL": "https://images.unsplash.com/photo-1556629538-fc3eba61504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
         },
         {
           "name": "Singapura",
           "country": "Singapore",
+          "code": "SG",
           "imageURL": "https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
         },
         {
           "name": "Kuala Lumpur",
           "country": "Malásia",
+          "code": "MY",
           "imageURL": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1164&q=80"
         },
         {
           "name": "Delhi",
           "country": "India",
+          "code": "IN",
           "imageURL": "https://images.unsplash.com/photo-1592639296346-560c37a0f711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         },
         {
           "name": "Shenzhen",
           "country": "China",
+          "code": "CN",
           "imageURL": "https://images.unsplash.com/photo-1608381742187-ea4b48c56630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
         },
         {
           "name": "Mumbai",
           "country": "India",
+          "code": "IN",
           "imageURL": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
         },
         {
           "name": "Phuket",
           "country": "Tailândia",
+          "code": "TH",
           "imageURL": "https://images.unsplash.com/photo-1629342654763-e6ac1bcb0917?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         }
       ]
@@ -70,36 +79,43 @@
         {
           "name": "Londres",
           "country": "Reino Unido",
+          "code": "GB",
           "imageURL": "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         },
         {
           "name": "Paris",
           "country": "França",
+          "code": "FR",
           "imageURL": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
         },
         {
           "name": "Roma",
           "country": "Itália",
+          "code": "IT",
           "imageURL": "https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
         },
         {
           "name": "Barcelona",
           "country": "Espanha",
+          "code": "ES",
           "imageURL": "https://images.unsplash.com/photo-1578912996078-305d92249aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
         },
         {
           "name": "Milão",
           "country": "Itália",
+          "code": "IT",
           "imageURL": "https://images.unsplash.com/photo-1512236077335-f1cda9239c11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         },
         {
           "name": "Berlin",
           "country": "Alemanha",
+          "code": "DE",
           "imageURL": "https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         },
         {
           "name": "Atena",
           "country": "Grécia",
+          "code": "GR",
           "imageURL": "https://images.unsplash.com/photo-1583656696771-2afded31a36c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         }
       ]
@@ -117,36 +133,43 @@
           {
             "name": "Toronto",
             "country": "Canadá",
+            "code": "CA",
             "imageURL": "https://images.unsplash.com/photo-1542704792-e30dac463c90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           },
           {
             "name": "Nova York",
             "country": "Estados Unidos",
+            "code": "US",
             "imageURL": "https://images.unsplash.com/photo-1516577165541-1ed0fe9f23de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           },
           {
             "name": "Vancouver",
             "country": "Canadá",
+            "code": "CA",
             "imageURL": "https://images.unsplash.com/photo-1559511260-66a654ae982a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1218&q=80"
           },
           {
             "name": "Cancun",
             "country": "Mexico",
+            "code": "MX",
             "imageURL": "https://images.unsplash.com/photo-1510097467424-192d713fd8b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1700&q=80"
           },
           {
             "name": "Miami",
             "country": "Estados Unidos",
+            "code": "US",
             "imageURL": "https://images.unsplash.com/photo-1589083130544-0d6a2926e519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           },
           {
             "name": "Los Angeles",
             "country": "Estados Unidos",
+            "code": "US",
             "imageURL": "https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
           },
           {
             "name": "Las Vegas",
             "country": "Estados Unidos",
+            "code": "US",
             "imageURL": "https://images.unsplash.com/photo-1583207884889-d79abf0d0aa3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1184&q=80"
           }
         ]
@@ -164,16 +187,19 @@
           {
             "name": "Rio de Janeiro",
             "country": "Brasil",
+            "code": "BR",
             "imageURL": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           },
           {
             "name": "Buenos Aires",
             "country": "Argentina",
+            "code": "AR",
             "imageURL": "https://images.unsplash.com/photo-1561816646-b5b12a9b92ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
           },
           {
             "name": "Lima",
             "country": "Peru",
+            "code": "PE",
             "imageURL": "https://images.unsplash.com/photo-1577587230708-187fdbef4d91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
           }
         ]
@@ -191,11 +217,13 @@
           {
             "name": "Egito",
             "country": "Cairo",
+            "code": "EG",
             "imageURL": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           },
           {
             "name": "Riyadh",
             "country": "Arábia Saudita",
+            "code": "SA",
             "imageURL": "https://images.unsplash.com/photo-1551041777-575d3855ca71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           }
         ]
@@ -213,16 +241,19 @@
           {
             "name": "Sydney",
             "country": "Australia",
+            "code": "AU",
             "imageURL": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           },
           {
             "name": "Melbourne",
             "country": "Australia",
+            "code": "AU",
             "imageURL": "https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
           },
           {
             "name": "Auckland",
             "country": "Nova Zelândia",
+            "code": "NZ",
             "imageURL": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
           }
         ]

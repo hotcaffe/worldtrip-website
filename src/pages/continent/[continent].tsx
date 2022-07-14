@@ -1,10 +1,11 @@
-import {Flex, Grid, GridItem, HStack, Image, List, ListItem, Text, VStack} from '@chakra-ui/react';
+import {Flex, Grid, HStack, Image, Text, VStack} from '@chakra-ui/react';
 import axios from 'axios';
 import Card from 'src/components/Card';
 
 type TopCities = {
     name: string,
     country: string,
+    code: string,
     imageURL: string
 }
 
@@ -50,11 +51,9 @@ export default function Continent(continentInfo: ContinentProps){
             <Flex direction='column' align='center'>
                 <Text fontSize='4xl' color='gray.600' fontWeight='medium' w={1060} >Cidades +100</Text>
                 <Grid templateColumns='repeat(4, 1fr)' gap={6} my='40px' w={1060}>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {continentInfo.top_100.map(city => (
+                        <Card name={city.name} country={city.country} code={city.code} imageURL={city.imageURL}/>
+                    ))}
                 </Grid>
             </Flex>
         </Flex>
@@ -78,11 +77,12 @@ export function getStaticPaths(){
 
 export async function getStaticProps({params}){
     const {continent} = params;
-    const url = process.env.FAKE_API_URL + '/continent/' + continent
 
-    const continentInfo = await axios.get(url).then(res => res.data)
+    const url = process.env.FAKE_API_URL + '/continent/' + continent;
 
-    continentInfo.backgroundURL = '/images/continents/' + continentInfo.id + '.jpg'
+    const continentInfo = await axios.get(url).then(res => res.data);
+
+    continentInfo.backgroundURL = '/images/continents/' + continentInfo.id + '.jpg';
 
     return {
         props: continentInfo
