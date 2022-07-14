@@ -9,7 +9,7 @@ export default function Header(){
     return (
         <Flex as="header" justify="center" align="center">
             <Flex position='absolute' m='auto' w={1440} align='center'>
-                {router.asPath == '/continent' && (
+                {router.asPath.includes('/continent') && (
                     <Link href="/" passHref>
                         <ChevronLeftIcon w="32px" h="32px" ml="140px" _hover={{
                             cursor: "pointer"

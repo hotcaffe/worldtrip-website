@@ -34,26 +34,32 @@ export default function Home() {
         Vamos nessa? <br /> Então escolha seu continente
       </Text>
       <Slider content={[{
+        key: 'eu',
         image: '/images/continents/europe.jpg',
         title: 'Europa',
         description: 'O continente mais antigo.'
       }, {
+        key: 'as',
         image: '/images/continents/asia.jpg',
         title: 'Asia',
         description: 'A cultura milenar oriental.'
       }, {
+        key: 'af',
         image: '/images/continents/africa.jpg',
         title: 'Africa',
         description: 'A diversidade na natureza.'
       }, {
+        key: 'na',
         image: '/images/continents/north-america.jpg',
         title: 'America do Norte',
         description: 'O centro do novo mundo.'
       }, {
+        key: 'sa',
         image: '/images/continents/south-america.jpg',
         title: 'America do Sul',
         description: 'A diversidade de povos e culturas.'
       }, {
+        key: 'oe',
         image: '/images/continents/oceania.jpg',
         title: 'Oceânia',
         description: 'O ultimo continente descoberto.'

@@ -17,6 +17,7 @@ const SwiperStyles = {
 };
 
 type SliderContent = {
+  key: string;
   image: string;
   title: string;
   description: string;
@@ -41,33 +42,35 @@ export default function Slider({ content }: SliderProps) {
       className="mySwiper"
       style={SwiperStyles}
     >
-      {content.map((slider) => (
-        <SwiperSlide key={slider.title}>
-          <Image
-            src={slider.image}
-            height="100%"
-            width="100%"
-            filter="auto"
-            brightness={0.5}
-          />
-          <VStack
-            position="absolute"
-            top={0}
-            w="100%"
-            h="100%"
-            justifyContent="center"
-            spacing={2}
-            color="white"
-          >
-            <Text fontSize="5xl" fontWeight="bold">
-              {slider.title}
-            </Text>
-            <Text fontSize="2xl" fontWeight="bold" color="gray.300">
-              {slider.description}
-            </Text>
-          </VStack>
-        </SwiperSlide>
-      ))}
+        {content.map((slider) => (
+          <SwiperSlide key={slider.key}>
+            <a href={`/continent/${slider.key}`}>
+              <Image
+                src={slider.image}
+                height="100%"
+                width="100%"
+                filter="auto"
+                brightness={0.5}
+              />
+              <VStack
+                position="absolute"
+                top={0}
+                w="100%"
+                h="100%"
+                justifyContent="center"
+                spacing={2}
+                color="white"
+              >
+                <Text fontSize="5xl" fontWeight="bold">
+                  {slider.title}
+                </Text>
+                <Text fontSize="2xl" fontWeight="bold" color="gray.300">
+                  {slider.description}
+                </Text>
+              </VStack>
+            </a>
+          </SwiperSlide>
+        ))}
     </Swiper>
   );
 }

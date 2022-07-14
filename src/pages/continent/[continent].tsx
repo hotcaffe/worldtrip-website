@@ -1,11 +1,12 @@
 import {Flex, Grid, GridItem, HStack, Image, List, ListItem, Text, VStack} from '@chakra-ui/react';
 import Card from 'src/components/Card';
 
-interface ContinentProps {
-    backgroundImage: string;
-}
+// interface ContinentProps {
+//     backgroundImage: string;
+// }
 
-export default function Continent({backgroundImage }: ContinentProps){
+export default function Continent({continent}){
+    console.log(continent)
     return (
         <Flex maxWidth={1440} align='center' m='auto' display='column'>
             <Flex h='500'>
@@ -43,4 +44,29 @@ export default function Continent({backgroundImage }: ContinentProps){
             </Flex>
         </Flex>
     )
+}
+
+export function getStaticPaths(){
+    return {
+        paths: [
+            {params: {continent: 'as'}},
+            {params: {continent: 'eu'}}, 
+            {params: {continent: 'sa'}}, 
+            {params: {continent: 'na'}}, 
+            {params: {continent: 'oc'}}, 
+            {params: {continent: 'af'}}
+        ],
+        fallback: false
+    }
+}
+
+
+export async function getStaticProps({params}){
+
+    const {continent} = params;
+    return {
+        props: {
+            continent
+        }
+    }
 }
