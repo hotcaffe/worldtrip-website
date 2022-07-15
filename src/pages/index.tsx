@@ -1,21 +1,41 @@
-import { Flex, Image, HStack, Divider, Text, VStack } from "@chakra-ui/react";
+import { Flex, Image, HStack, Divider, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
 import Paper from "src/components/Paper";
-import { Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Slider from "src/components/Slider";
+import { CheckCircleIcon } from "@chakra-ui/icons";
 
 export default function Home() {
+  const isWideVersion = useBreakpointValue({
+    base: true,
+    md: false
+  })
+
   return (
-    <Flex maxWidth={1440} direction="column" m="auto" mb={20} align="center">
+    <Flex maxWidth={[375,375,1440]} w={[375,375,1440]} direction="column" m="auto" mb={20} align="center">
       <Paper />
-      <HStack spacing={125} m="auto" marginY={110}>
-        <Image src="/images/icons/Nightlife.svg" />
-        <Image src="/images/icons/Beach.svg" />
-        <Image src="/images/icons/Modern.svg" />
-        <Image src="/images/icons/Classic.svg" />
-        <Image src="/images/icons/More.svg" />
+      <HStack spacing={['80px', '50px', '5', '5', '125']} m="auto" marginY={['36px', '36px', '110px']} align='flex-start'>
+        {!isWideVersion ? (
+          <>
+            <Image src="/images/icons/Nightlife.svg" />
+            <Image src="/images/icons/Beach.svg" />
+            <Image src="/images/icons/Modern.svg" />
+            <Image src="/images/icons/Classic.svg" />
+            <Image src="/images/icons/More.svg" />
+          </>
+        ) : (
+          <>
+            <VStack align='flex-start'>
+              <Text fontSize='lg' fontWeight='medium'><CheckCircleIcon color='yellow.400'/> vida noturna</Text>
+              <Text fontSize='lg' fontWeight='medium'><CheckCircleIcon color='yellow.400'/> praia</Text>
+              <Text fontSize='lg' fontWeight='medium'><CheckCircleIcon color='yellow.400'/> moderno</Text>
+            </VStack>
+            <VStack align='flex-start'>
+              <Text fontSize='lg' fontWeight='medium'><CheckCircleIcon color='yellow.400'/> clássico</Text>
+              <Text fontSize='lg' fontWeight='medium'><CheckCircleIcon color='yellow.400'/> e mais...</Text>
+            </VStack>
+          </>
+        )}
       </HStack>
       <Divider
         orientation="horizontal"
@@ -25,7 +45,7 @@ export default function Home() {
         borderWidth={1}
       />
       <Text
-        fontSize="4xl"
+        fontSize={["xl", "xl", "4xl"]}
         textAlign="center"
         fontWeight="medium"
         color="gray.700"

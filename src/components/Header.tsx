@@ -1,5 +1,5 @@
 import { ChevronLeftIcon } from "@chakra-ui/icons";
-import { Flex, Icon, Image } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

@@ -1,4 +1,4 @@
-import { Flex, Image, Text, GridItem, HStack, VStack, Icon, Spinner } from "@chakra-ui/react";
+import { Image, Text, GridItem, HStack, VStack, Icon } from "@chakra-ui/react";
 import * as flag from 'country-flag-icons/react/3x2';
 
 interface CardProps {
@@ -6,12 +6,6 @@ interface CardProps {
     country: string,
     code: string,
     imageURL: string
-}
-
-const flagStyles = {
-    'width': '30px',
-    'height': '30px',
-    'border-radius': '50%'
 }
 
 export default function Card({name, country, code, imageURL}: CardProps){
