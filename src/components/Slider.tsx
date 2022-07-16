@@ -22,7 +22,7 @@ export default function Slider({ content }: SliderProps) {
       width: '375px',
       height: '250px',
       "--swiper-navigation-color": "#FFBA08",
-      "--swiper-navigation-size": "30px",
+      "--swiper-navigation-size": "15px",
       "--swiper-pagination-color": "#FFBA08",
       "--swiper-pagination-bullet-inactive-color": "#999999",
       "--swiper-pagination-bullet-inactive-opacity": "1",
