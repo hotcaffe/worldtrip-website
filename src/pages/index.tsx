@@ -12,7 +12,7 @@ export default function Home() {
   })
 
   return (
-    <Flex maxWidth={[375,375,1440]} w={[375,375,1440]} direction="column" m="auto" mb={20} align="center">
+    <Flex maxWidth={[375,375,1440]} w={[375,375,1440]} direction="column" m="auto" mb={20} align="center" >
       <Paper />
       <HStack spacing={['80px', '50px', '5', '5', '125']} m="auto" marginY={['36px', '36px', '110px']} align='flex-start'>
         {!isWideVersion ? (
@@ -79,7 +79,7 @@ export default function Home() {
         title: 'America do Sul',
         description: 'A diversidade de povos e culturas.'
       }, {
-        key: 'oe',
+        key: 'oc',
         image: '/images/continents/oc.jpg',
         title: 'Oceânia',
         description: 'O ultimo continente descoberto.'

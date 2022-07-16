@@ -7,17 +7,17 @@ export default function Header(){
     const router = useRouter(); 
 
     return (
-        <Flex as="header" justify="center" align="center">
-            <Flex position='absolute' m='auto' w={1440} align='center'>
+        <Flex as="header" justify="center" align="center"  m='auto' w={[375, 375, 1440]}>
+            <Flex position='absolute' m='auto' w={[375, 375, 1440]} align='center'>
                 {router.asPath.includes('/continent') && (
                     <Link href="/" passHref>
-                        <ChevronLeftIcon w="32px" h="32px" ml="140px" _hover={{
+                        <ChevronLeftIcon w={["16px", "16px", "32px"]} h={["16px", "16px", "32px"]} ml={["16px", "16px", "140px"]} _hover={{
                             cursor: "pointer"
                         }}/>
                     </Link>
                 )}
             </Flex>
-            <Image src='/images/logo.svg' alt="logo" h="45px" w="180px" marginY="27px"/>
+            <Image src='/images/logo.svg' alt="logo" h={["20px", "20px", "45px"]} w={["81px", "81px", "180px"]} marginY="27px"/>
         </Flex>
     )
 }
